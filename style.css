@@ -1,0 +1,116 @@
+body {
+    font-family: 'Signika', 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-photo {
+    margin-bottom: 15px;
+}
+
+.profile-image {
+    width: 150px;
+    /* Increased size */
+    height: 150px;
+    /* Increased size */
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.role {
+    color: #3E5879; 
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+
+.description {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.social-link i {
+    font-size: 1.5rem;
+    /* Adjust icon size */
+    color: black;
+    /* Default icon color */
+    transition: color 0.3s;
+}
+
+.social-link i:hover {
+    color: #777;
+    /* Change color on hover */
+}
+
+.availability {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 10px;
+}
+
+.theme-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #3E5879;
+    transition: color 0.3s ease;
+}
+
+.theme-button:hover {
+    color: #555;
+}
+
+.profile-card {
+    position: relative; /* Penting untuk posisi absolute tombol */
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-card.dark-mode {
+    background-color: #3C3C3C; /* Warna gelap untuk kartu */
+    color: #FFFFFF; /* Warna teks terang */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Bayangan lebih gelap */
+}
+.dark-mode p {
+    color: white !important; /* Pastikan teks tetap terlihat di latar gelap */
+}
